@@ -10,9 +10,6 @@
     <packaging>pom</packaging>
 
     <properties>
-        <!-- Project config -->
-        <testDir>/Users/whereareiam/Projects/TestP/local/templates/Lobby/default/plugins</testDir>
-
         <java.version>17</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <minecraft.version>1.20.4</minecraft.version>
@@ -75,14 +72,15 @@
         </profile>
         <profile>
             <id>release</id>
-            <modules>
-                <module>core</module>
-                <module>velocity</module>
-                <module>spigot</module>
-                <module>paper</module>
-            </modules>
         </profile>
     </profiles>
+
+    <modules>
+        <module>core</module>
+        <module>velocity</module>
+        <module>spigot</module>
+        <module>paper</module>
+    </modules>
 
     <repositories>
         <!-- Velocity -->
